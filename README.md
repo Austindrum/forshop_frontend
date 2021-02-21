@@ -1,18 +1,4 @@
-# vatta 二手風格小舖
-
-<p>
-  一件衣服，一個故事，在 Vatta 二手衣穿出妳的生活風格！
-</p>
-<p>
-  Demo：<a  href="https://kjwen310.github.io/vatta-vintage/#/">Vatta 二手風格小舖</a>
-</p>
-<p>
-  本專案僅作為練習，無商業用途，特別感謝 <a  href="https://www.facebook.com/clothes.telling">衣服圖書館</a> 支援圖片與文案
-</p>
-<p>
-  <img src="./public/images/vatta-readme-1.png" />
-</p>
-
+# ForShop 風格小舖
 
 
 ## 使用技術
@@ -43,39 +29,27 @@
 > 可按照商品類別逐一搜尋
 
 <p>
-  <img src="./public/images/vatta-readme-2.png" />
 </p>
 
 > 呈現商品細節與關連商品
 
 <p>
-  <img src="./public/images/vatta-readme-3.png" />
 </p>
 
 > 具有購物車與下單系統
 
 <p>
-  <img src="./public/images/vatta-readme-4.png" />
 </p>
 
 > 具有後台管理系統
 
 <p>
-  <img src="./public/images/vatta-readme-5.png" />
 </p>
 
 > 支援行動裝置的RWD設計
 
 <p>
-  <img src="./public/images/vatta-readme-6.png" />
 </p>
-
-
-
-## REST APIs
-
-後端 API 由 [六角學院](https://courses.hexschool.com/)提供
-
 
 ---
 
