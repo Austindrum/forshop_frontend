@@ -101,9 +101,9 @@
               <h4>> 其他資訊</h4>
               <ul>
                 <li>- 注意事項：{{ product.description }}</li>
-                <li>- 等級說明：
-                  <span v-for="(item, index) in qualityClass" :key="index">
-                    {{ `${item.class}：${item.desc} / ` }}
+                <li>- 其他說明：
+                  <span>
+                    客服電話: (02)2222-0020 (非營業時間將無法回應)(急件請購買完後來電確認.商品隨時在銷售無法100%保證有現貨)賣場皆為部分現貨+預購~
                   </span>
                 </li>
               </ul>
@@ -123,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid also-like">
+    <div class="container-fluid also-like mt-5">
       <h2 class="h3 text-muted text-left pb-3">您可能也會喜歡</h2>
       <ProductCard :alsoLikeCategory="alsoLikeCategory"
       :alsoLikeId="alsoLikeId" ref="alsolikeProductCard"/>
@@ -148,22 +148,11 @@ export default {
       product: {},
       images: [],
       colors: [],
-      qualityClass: [
-        { class: 'A', desc: '全新未使用' },
-        { class: 'B', desc: '僅穿過1~5次，衣況良好' },
-        { class: 'C', desc: '一般二手衣物，衣況維持良好' },
-        { class: 'D', desc: '一般二手衣物，有較多瑕疵' },
-      ],
       majorImg: '',
       tempIndex: 0,
       alsoLikeCategory: '',
       alsoLikeId: '',
-      // alsoLike: {
-      //   category: '',
-      //   id: '',
-      // },
       isAdded: false,
-      // isDisabled: false,
       isLoading: false,
     };
   },
@@ -175,36 +164,6 @@ export default {
     isDisabled() {
       return this.$store.state.cartItems.some((item) => item.product.id === parseInt(this.id, 10));
     },
-    // sizeImg() {
-    //   let img = '';
-    //   const sub = this.product.options.subCategory;
-    //   switch (this.product.category) {
-    //     case ('clothes'):
-    //       if (sub === 'short-sleeve' || sub === 'no-sleeve') {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/MaXPgK6HA1kom5yoZhYsg2IKnmDyaZF9OPz6ljJbgKWYqv6NrxIYAPNt7fFW6MoZOvKGyleOVtUB0ixwpwki6KX000KDPgvsno79CKLw1Uyhesj7QPmBWMPirDEVNBFt.png';
-    //       } else {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/n62aYeqmpBqFFa0aM4ZFHFAE7x0mexsZDLcpkEWhxa4nSSx1dXCFZLNVe7H0yMTnWVLitSoKtTIijQzh53ZmANRFg484jGlLAOZms5PfFxPLKy3x0rurnkATOUi3gQ1A.png';
-    //       }
-    //       break;
-    //     case ('pants'):
-    //       if (sub === 'shorts' || sub === 'short-jeans') {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ok3BGNRLihQAPGcUwZvcksVSOfJnUrodHPcZsf1HHjzNLSvXxMLSthpqniIKPGBHzWYxAU7keSgxtV24w215Yy772YiVDyKcHKnhkHBzmOc1lJmSMmgsCEtsAd4wRety.png';
-    //       } else {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/CMQuObsmy3MEvCtVySb2y3593vR97l08BAx08PsbIbupmhppkWfAPnrbVHuQgzzQ5OzmhfL3NizgLrmDks7fMxge22Ho9y5bXDoUxuJFyMsnR7Pulc9cFnW080JI1KPF.png';
-    //       }
-    //       break;
-    //     case ('skirt'):
-    //       if (sub === 'dress') {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/OKxSDlUsIgUYbpZOdH9Zu1sZtdALo7e1QMP2AgBNhh2IcsJbnBqELEyHQd1L52EGKojcByLKGajx4vphVBfhDEwTHSxJMeWoE5OFDfhTC4IrpSyU6Ra5eZETnVp4PFqs.png';
-    //       } else {
-    //         img = 'https://hexschool-api.s3.us-west-2.amazonaws.com/custom/YbAXOrzA9AqxRHYtScU9D9LAItE435pvpfkPQUXtRHnOc6ZagEaVzNe5GnVpVrdZ5KOiuj7y4MtQOLgAQMXbgxT83KzCBMQ6XArdiUStsM5zFr3whLdBttf7Fd7rqR83.png';
-    //       }
-    //       break;
-    //     default:
-    //       break;
-    //   }
-    //   return img;
-    // },
   },
   methods: {
     async getProduct() {
@@ -226,22 +185,6 @@ export default {
         vm.alsoLikeId = vm.product.id;
       }
       vm.isLoading = false;
-      // const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}
-      // /ec/product/${this.id}`;
-      // this.$http
-      //   .get(api)
-      //   .then((res) => {
-      //     this.product = res.data.data;
-      //     [this.majorImg] = this.product.imageUrl;
-      //     this.alsoLike.category = this.product.category;
-      //     this.alsoLike.id = this.product.id;
-      //     this.tempIndex = 0;
-      //     this.getCart();
-      //     this.isLoading = false;
-      //   })
-      //   .catch(() => {
-      //     this.isLoading = false;
-      //   });
     },
     changeImg(index) {
       this.majorImg = this.images[index];
@@ -301,14 +244,7 @@ export default {
     $route() {
       this.id = this.$route.params.id;
       this.getProduct();
-      // const categoryId = this.$route.params.category;
-      // this.getCategoryProducts(categoryId);
     },
-  //   // 如果是從另一單一產品頁連結過來時，紀錄新的id並重新渲染
-  //   $route(to) {
-  //     this.id = to.params.id;
-  //     this.getProduct();
-  //   },
   },
 };
 </script>
@@ -351,7 +287,7 @@ export default {
       text-decoration: line-through;
     }
     .story-content {
-      height: 30%;
+      height: 20%;
       line-height: 1.5rem;
     }
     button {
