@@ -18,9 +18,16 @@ ForShop_FrontEnd 是一個使用 Vue 建立的電子商務前端專案，平台�
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git1.png)
 2. 具備關聯商品、專欄空間、分店簡介等多元區塊  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git2.png)  
+
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git3.png)
-3. 擁有具互動性的購物車、願望清單系統
-4. 具有資料驗證、確認下單等功能
+3. 擁有具互動性的購物車、願望清單系統  
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git4.png)  
+
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git5.png)
+4. 具有資料驗證、確認下單等功能  
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git6.png)  
+
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git7.png)
 
 **後台**
 1. 可進行商品的新增、修改、刪除等操作
