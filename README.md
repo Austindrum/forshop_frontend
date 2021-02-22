@@ -1,5 +1,7 @@
 # ForShop 購物網站 FrontEnd
 
+[DEMO](https://austindrum.github.io/forshop_frontend/#/)
+
 ForShop_FrontEnd 是一個使用 Vue 建立的電子商務前端專案，平台使用者主要是下列兩種身份，分別為一般消費者（Visitor）、商家管理員（Admin），搭配 [ForShop-Backend](https://github.com/Austindrum/forshop_backend) 後端專案，打造一個全方位的電商網站。
 
 ## 使用技術
@@ -18,48 +20,25 @@ ForShop_FrontEnd 是一個使用 Vue 建立的電子商務前端專案，平台�
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git1.png)
 2. 具備關聯商品、專欄空間、分店簡介等多元區塊  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git2.png)  
-
+  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git3.png)
 3. 擁有具互動性的購物車、願望清單系統  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git4.png)  
-
+  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git5.png)
 4. 具有資料驗證、確認下單等功能  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git6.png)  
-
+  
 ![image](https://github.com/Austindrum/forshop_frontend/blob/master/git7.png)
 
 **後台**
-1. 可進行商品的新增、修改、刪除等操作
-2. 可管理訂單
+1. 可進行商品的新增、修改、刪除等操作  
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git8.png) 
+  
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git9.png) 
+2. 可管理訂單  
+![image](https://github.com/Austindrum/forshop_frontend/blob/master/git10.png) 
 3. 具備使用者驗證機制，以確保操作安全
-
-
-> 可按照商品類別逐一搜尋
-
-<p>
-
-</p>
-
-> 呈現商品細節與關連商品
-
-<p>
-</p>
-
-> 具有購物車與下單系統
-
-<p>
-</p>
-
-> 具有後台管理系統
-
-<p>
-</p>
-
-> 支援行動裝置的RWD設計
-
-<p>
-</p>
 
 ---
 
