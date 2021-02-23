@@ -103,6 +103,7 @@ export default {
   methods: {
     async getProducts() {
       const vm = this;
+      vm.isLoading = true;
       vm.products = [];
       if (vm.category) {
         const { data, statusText } = await productsAPI.getCategoryProducts(vm.category);
@@ -148,6 +149,7 @@ export default {
           });
         }
       }
+      vm.isLoading = false;
     },
     getDetail(productId) {
       this.$router.push({
@@ -198,9 +200,6 @@ export default {
     alsoLikeCategory() {
       this.getProducts();
     },
-    // alsoLikeId() {
-    //   this.getProducts();
-    // },
     products() {
       this.setPageNum();
     },

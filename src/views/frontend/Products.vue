@@ -72,12 +72,6 @@ export default {
     this.getCategoryProducts(categoryId);
   },
   watch: {
-    // 換至其他類別時，要抓取新路由的category。
-    // 因為productCard是一獨立元件，用$ref通知重新抓取資料
-    // $route(to) {
-    //   this.para = to.params.category;
-    //   this.$refs.productCard.getProducts();
-    // },
     $route() {
       const categoryId = this.$route.params.category;
       this.getCategoryProducts(categoryId);

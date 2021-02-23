@@ -132,7 +132,7 @@
             <a class="nav-link" href="#" @click.prevent="$router.push('/shop/storeInfo')">實體店資訊</a>
           </div>
           <div class="nav-item">
-            <a class="nav-link" href="#" @click.prevent="$router.push('/')">vatta 形象頁</a>
+            <a class="nav-link" href="#" @click.prevent="$router.push('/')">ForShop 形象頁</a>
           </div>
         </div>
       </div>

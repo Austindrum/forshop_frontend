@@ -39,9 +39,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #A9A9A9;
+    border-radius: 20px;
+    padding: 15px;
+  }
   .bg-cover {
-    // height: 80vh;
-    // max-height: 409px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

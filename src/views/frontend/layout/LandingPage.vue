@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Loading :active.sync="isLoading"></Loading>
     <div class="shop-button text-white" @click="$router.push('/shop/home')">
       <div class="mb-2">
         <i class="fas fa-shopping-cart fa-2x"></i>

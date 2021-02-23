@@ -75,6 +75,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #A9A9A9;
+  border-radius: 20px;
+  padding: 15px;
+}
 .carousel-control {
   display: flex;
   .bg-cover {
